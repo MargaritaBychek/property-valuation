@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="558.0" style="-fx-background-color: #393378;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoreDetailsAppraiserController">
+   <children>
+      <Button fx:id="ok" layoutX="216.0" layoutY="254.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="68.0" style="-fx-background-color: #fb8c0d; -fx-border-color: gold;" text="OK" textFill="WHITE">
+         <font>
+            <Font name="Lobster" size="15.0" />
+         </font>
+      </Button>
+      <Accordion />
+      <Label fx:id="FIO" layoutX="30.0" layoutY="22.0" prefHeight="25.0" prefWidth="423.0" text="фио">
+         <font>
+            <Font name="Lobster" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#dc8aff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="10.0" layoutY="67.0" minHeight="0.0" minWidth="0.0" prefHeight="178.0" prefWidth="532.0" style="-fx-background-color: #b7eae3;">
+         <children>
+            <Label fx:id="state" layoutX="118.0" layoutY="22.0" prefHeight="21.0" prefWidth="123.0" text="область">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="city" layoutX="118.0" layoutY="54.0" prefHeight="21.0" prefWidth="123.0" text="город">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="address" layoutX="118.0" layoutY="88.0" prefHeight="21.0" prefWidth="176.0" text="адрес">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="phone" layoutX="118.0" layoutY="126.0" prefHeight="21.0" prefWidth="113.0" text="телефон">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="licence" layoutX="367.0" layoutY="24.0" prefHeight="21.0" prefWidth="123.0" text="лицензия">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="PopularityPassport" layoutX="405.0" layoutY="54.0" prefHeight="21.0" prefWidth="113.0" text="популярность">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="24.0" prefHeight="17.0" prefWidth="61.0" text="Область">
+               <font>
+                  <Font name="Lobster" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="56.0" text="Город">
+               <font>
+                  <Font name="Lobster" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="90.0" text="Адрес">
+               <font>
+                  <Font name="Lobster" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="128.0" text="№ телефона">
+               <font>
+                  <Font name="Lobster" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="EmailLicence" layoutX="207.0" layoutY="26.0" text="№ лицензии">
+               <font>
+                  <Font name="Lobster" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="PassportLevel" layoutX="209.0" layoutY="56.0" text="Качество выполнения">
+               <font>
+                  <Font name="Lobster" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Series" layoutX="352.0" layoutY="54.0" prefHeight="21.0" prefWidth="44.0" text="популярность">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="Statistics" layoutX="303.0" layoutY="126.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="205.0" style="-fx-background-color: gold;" text="Просмотреть статистику">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

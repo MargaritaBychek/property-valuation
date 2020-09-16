@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="758.0" style="-fx-background-color: #393378;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoreDetailsRealtyController">
+   <children>
+      <Label fx:id="Title" layoutX="225.0" layoutY="20.0" text="Объект №">
+         <font>
+            <Font name="Lobster" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#dc8aff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="15.0" layoutY="71.0" prefHeight="423.0" prefWidth="728.0" style="-fx-background-color: #b7eae3;">
+         <children>
+            <Label layoutX="57.0" layoutY="24.0" prefHeight="20.0" prefWidth="46.0" text="Адрес">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="64.0" text="Площадь пола">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Address" layoutX="117.0" layoutY="24.0" prefHeight="20.0" prefWidth="405.0" text="Адрес">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="98.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="133.0" text="Толщина стен">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="168.0" text="Материал">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="212.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="is1" layoutX="420.0" layoutY="90.0" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox fx:id="is2" layoutX="420.0" layoutY="125.0" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox fx:id="is3" layoutX="420.0" layoutY="160.0" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox fx:id="is4" layoutX="420.0" layoutY="188.0" mnemonicParsing="false" text="CheckBox" />
+            <CheckBox fx:id="is5" layoutX="420.0" layoutY="224.0" mnemonicParsing="false" text="CheckBox" />
+            <Label fx:id="Square" layoutX="192.0" layoutY="59.0" text="Площадь пола">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="High" layoutX="181.0" layoutY="98.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Thick" layoutX="198.0" layoutY="135.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Material" layoutX="178.0" layoutY="168.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Age" layoutX="199.0" layoutY="213.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Floors" layoutX="51.0" layoutY="253.0" text="Количество этажей">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="SquareLand" layoutX="50.0" layoutY="291.0" text="Площадь участка">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Floors_metresToroad" layoutX="211.0" layoutY="253.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="SL" layoutX="199.0" layoutY="291.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Bus" layoutX="47.0" layoutY="332.0" text="Автобусная остановка">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="StationBus" layoutX="208.0" layoutY="332.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="is6" layoutX="420.0" layoutY="255.0" mnemonicParsing="false" text="CheckBox" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="OK" layoutX="254.0" layoutY="511.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: gold;" text="ОК">
+         <font>
+            <Font name="Lobster" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="44.0" layoutY="20.0" text="Объект №">
+         <font>
+            <Font name="Lobster" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#dc8aff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

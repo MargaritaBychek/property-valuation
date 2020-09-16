@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="13057543-56bd-4bce-b204-af89a374595d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set>
+        <option value="index" />
+        <option value="trigger" />
+      </set>
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="assessment@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="assessment@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="assessment@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="assessment: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="assessment@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="assessment: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="commission: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TWOXrD96I1V5UVLBdekw5ei4Ns" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-8.0.18.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="dataBase.Tables" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.Main" />
+      <module name="CourseWorkServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CourseWorkServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dataBase.Tables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dataBase.Tables" />
+      <option name="MAIN_CLASS_NAME" value="dataBase.Tables.UsersDBTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersDBTest.findUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CourseWorkServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dataBase.Tables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dataBase.Tables" />
+      <option name="MAIN_CLASS_NAME" value="dataBase.Tables.UsersDBTest" />
+      <option name="METHOD_NAME" value="findUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersDBTest.isLoginUnique" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CourseWorkServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dataBase.Tables.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dataBase.Tables" />
+      <option name="MAIN_CLASS_NAME" value="dataBase.Tables.UsersDBTest" />
+      <option name="METHOD_NAME" value="isLoginUnique" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UsersDBTest" />
+        <item itemvalue="JUnit.UsersDBTest.isLoginUnique" />
+        <item itemvalue="JUnit.UsersDBTest.findUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@333bd519" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13057543-56bd-4bce-b204-af89a374595d" name="Default Changelist" comment="" />
+      <created>1573572428234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573572428234</updated>
+      <workItem from="1573572432602" duration="342000" />
+      <workItem from="1573574986630" duration="10150000" />
+      <workItem from="1573632029483" duration="6708000" />
+      <workItem from="1573640647178" duration="2772000" />
+      <workItem from="1573643600921" duration="21000" />
+      <workItem from="1573720934758" duration="170000" />
+      <workItem from="1573831815309" duration="4446000" />
+      <workItem from="1573837501268" duration="1237000" />
+      <workItem from="1573910320867" duration="783000" />
+      <workItem from="1574006943366" duration="1189000" />
+      <workItem from="1574180767331" duration="8858000" />
+      <workItem from="1574234036187" duration="2544000" />
+      <workItem from="1574246907851" duration="3484000" />
+      <workItem from="1574321189278" duration="9897000" />
+      <workItem from="1574356109519" duration="2002000" />
+      <workItem from="1574397591598" duration="703000" />
+      <workItem from="1574405804207" duration="4903000" />
+      <workItem from="1574413410554" duration="7545000" />
+      <workItem from="1574785015162" duration="2274000" />
+      <workItem from="1574787831999" duration="6648000" />
+      <workItem from="1574933757325" duration="1931000" />
+      <workItem from="1575020262390" duration="1367000" />
+      <workItem from="1575039690461" duration="9750000" />
+      <workItem from="1575116996069" duration="15039000" />
+      <workItem from="1575186126341" duration="23699000" />
+      <workItem from="1575265568750" duration="31832000" />
+      <workItem from="1575351858321" duration="8097000" />
+      <workItem from="1575378614844" duration="20546000" />
+      <workItem from="1575443342873" duration="9966000" />
+      <workItem from="1575472130938" duration="3711000" />
+      <workItem from="1575478285407" duration="12105000" />
+      <workItem from="1575520819869" duration="10867000" />
+      <workItem from="1575543457940" duration="3218000" />
+      <workItem from="1575650144287" duration="2600000" />
+      <workItem from="1575896057163" duration="1518000" />
+      <workItem from="1575998256953" duration="5540000" />
+      <workItem from="1576047711676" duration="3738000" />
+      <workItem from="1576076662584" duration="4564000" />
+      <workItem from="1576145507701" duration="499000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/server/methods/Methods.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="758.0" style="-fx-background-color: #393378;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoreDetailsCommissionController">
+   <children>
+      <Label fx:id="Title" layoutX="225.0" layoutY="20.0" text="Объект №">
+         <font>
+            <Font name="Lobster" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#dc8aff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="15.0" layoutY="71.0" prefHeight="423.0" prefWidth="728.0" style="-fx-background-color: #b7eae3;">
+         <children>
+            <Label layoutX="25.0" layoutY="59.0" prefHeight="20.0" prefWidth="91.0" text="Дата заказа">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="88.0" text="Время заказа">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Date" layoutX="173.0" layoutY="59.0" prefHeight="20.0" prefWidth="46.0" text="Адрес">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="118.0" text="№ объекта">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="152.0" text="Тип объекта">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="224.0" text="Материал">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="259.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Time" layoutX="171.0" layoutY="88.0" text="Площадь пола">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Number" layoutX="160.0" layoutY="118.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Parameters" layoutX="178.0" layoutY="185.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Material" layoutX="146.0" layoutY="224.0" text="Высота потолков">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Age" layoutX="153.0" layoutY="259.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="185.0" text="Параметры (S/H/d)">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Type" layoutX="158.0" layoutY="152.0" text="Площадь участка">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="FIO" layoutX="466.0" layoutY="24.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Owner" layoutX="168.0" layoutY="24.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="356.0" layoutY="88.0" text="Статус">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Status" layoutX="487.0" layoutY="88.0" text="Возраст">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="Vote" layoutX="356.0" layoutY="337.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="318.0" style="-fx-background-color: gold;" text="Оценить качество обслуживания">
+               <font>
+                  <Font name="Lobster" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="352.0" layoutY="24.0" text="Оценщик">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="24.0" text="Заказчик">
+               <font>
+                  <Font name="Lobster" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="Report" layoutX="452.0" layoutY="279.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: gold;" text="Просмотреть отчет">
+               <font>
+                  <Font name="Lobster" size="20.0" />
+               </font>
+            </Button>
+            <SVGPath fx:id="V5" content="M100,10  L105.8,27.2 123.8,27.2 109.4,38        114.6,55.2 100,45 85.4,55.2 90.6,38  76.2,27.2 94.2,27.2" fill="#0056ff" layoutX="194.0" layoutY="323.0" />
+            <SVGPath fx:id="V4" content="M100,10  L105.8,27.2 123.8,27.2 109.4,38        114.6,55.2 100,45 85.4,55.2 90.6,38  76.2,27.2 94.2,27.2" fill="#0056ff" layoutX="136.0" layoutY="324.0" />
+            <SVGPath fx:id="V3" content="M100,10  L105.8,27.2 123.8,27.2 109.4,38        114.6,55.2 100,45 85.4,55.2 90.6,38  76.2,27.2 94.2,27.2" fill="#0056ff" layoutX="81.0" layoutY="323.0" />
+            <SVGPath fx:id="V2" content="M100,10  L105.8,27.2 123.8,27.2 109.4,38        114.6,55.2 100,45 85.4,55.2 90.6,38  76.2,27.2 94.2,27.2" fill="#0056ff" layoutX="26.0" layoutY="324.0" />
+            <SVGPath fx:id="V1" content="M100,10  L105.8,27.2 123.8,27.2 109.4,38        114.6,55.2 100,45 85.4,55.2 90.6,38  76.2,27.2 94.2,27.2" fill="#0056ff" layoutX="-30.0" layoutY="324.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="OK" layoutX="254.0" layoutY="511.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: gold;" text="ОК">
+         <font>
+            <Font name="Lobster" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="44.0" layoutY="20.0" text="Заказ №">
+         <font>
+            <Font name="Lobster" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#dc8aff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

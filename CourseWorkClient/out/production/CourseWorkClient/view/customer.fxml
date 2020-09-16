@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="790.0" style="-fx-background-color: #393378;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <Button fx:id="Exit" layoutX="708.0" layoutY="17.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="68.0" style="-fx-background-color: #fb8c0d; -fx-border-color: gold;" text="Выход" textFill="WHITE">
+         <font>
+            <Font name="Lobster" size="15.0" />
+         </font>
+      </Button>
+      <Accordion />
+      <TabPane layoutX="12.0" layoutY="67.0" prefHeight="422.0" prefWidth="767.0" style="-fx-background-color: #b7eae3;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="Appraiser_tab" text="Список оценщиков">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableUsers" layoutX="13.0" layoutY="98.0" prefHeight="218.0" prefWidth="737.0">
+                          <columns>
+                            <TableColumn fx:id="Table_id_user" prefWidth="33.0" text="ID" />
+                            <TableColumn fx:id="Table_surname_user" prefWidth="81.0" text="Фамилия" />
+                              <TableColumn fx:id="Table_name_user" prefWidth="76.0" text="Имя" />
+                              <TableColumn fx:id="Table_patronymic_user" prefWidth="83.0" text="Отчество" />
+                              <TableColumn fx:id="Table_state_user" prefWidth="86.0" text="Область" />
+                              <TableColumn fx:id="Table_city_user" text="Город" />
+                              <TableColumn fx:id="Table_address_user" prefWidth="136.0" text="Адрес" />
+                              <TableColumn fx:id="Table_phone_user" prefWidth="161.0" text="№ телефона" />
+                          </columns>
+                        </TableView>
+                        <ComboBox fx:id="SearchState" layoutX="207.0" layoutY="36.0" prefWidth="150.0" promptText="Поиск по области" />
+                        <TextField fx:id="SearchSurname" layoutX="33.0" layoutY="36.0" promptText="Поиск по фамилии" />
+                        <Button fx:id="Statistics" layoutX="472.0" layoutY="22.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="235.0" style="-fx-background-color: gold;" text="Просмотреть статистику">
+                           <font>
+                              <Font name="Lobster" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="Objects_tab" text="Список объектов">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="DeleteObject" layoutX="425.0" layoutY="327.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="99.0" style="-fx-background-color: gold;" text="Удалить">
+                           <font>
+                              <Font name="Lobster" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="CorrectObject" layoutX="250.0" layoutY="327.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" style="-fx-background-color: gold;" text="Редактировать">
+                           <font>
+                              <Font name="Lobster" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="AddObject" layoutX="105.0" layoutY="327.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="94.0" style="-fx-background-color: gold;" text="Добавить">
+                           <font>
+                              <Font name="Lobster" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="MyObjects" layoutX="135.0" layoutY="35.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="209.0" style="-fx-background-color: gold;" text="Мои объекты">
+                           <font>
+                              <Font name="Lobster" size="17.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="TableRealty" layoutX="6.0" layoutY="97.0" prefHeight="200.0" prefWidth="753.0">
+                          <columns>
+                            <TableColumn fx:id="Registration_No" prefWidth="39.0" text="№ регистрации" />
+                            <TableColumn fx:id="TypeRealty" prefWidth="88.0" text="Тип объекта" />
+                              <TableColumn fx:id="StateRealty" prefWidth="67.0" text="Область" />
+                              <TableColumn fx:id="CityRealty" prefWidth="63.0" text="Город" />
+                              <TableColumn fx:id="AddressRealty" prefWidth="54.0" text="Адрес" />
+                              <TableColumn fx:id="NumberRooms" prefWidth="83.0" text="Кол. комнат" />
+                              <TableColumn fx:id="Square" prefWidth="72.0" text="Площадь" />
+                              <TableColumn fx:id="High" prefWidth="65.0" text="Высота потолков" />
+                              <TableColumn fx:id="Thick" prefWidth="92.0" text="Толщина стен" />
+                              <TableColumn fx:id="Material" prefWidth="73.0" text="Материал" />
+                              <TableColumn fx:id="Age" prefWidth="56.0" text="Возраст" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="ReturnAllObjects" layoutX="395.0" layoutY="35.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="209.0" style="-fx-background-color: gold;" text="Все объекты">
+                           <font>
+                              <Font name="Lobster" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="More" layoutX="647.0" layoutY="38.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="99.0" style="-fx-background-color: gold;" text="Подробнее">
+                           <font>
+                              <Font name="Lobster" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="Commission_tab" text="Управление заявками">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #b7eae3;">
+                     <children>
+                        <Button fx:id="AddCommission" layoutX="124.0" layoutY="337.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="81.0" style="-fx-background-color: gold;" text="Добавить">
+                           <font>
+                              <Font name="Lobster" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="DeleteCommission" layoutX="431.0" layoutY="337.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="99.0" style="-fx-background-color: gold;" text="Удалить">
+                           <font>
+                              <Font name="Lobster" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="CorrectCommission" layoutX="268.0" layoutY="337.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" style="-fx-background-color: gold;" text="Редактировать">
+                           <font>
+                              <Font name="Lobster" size="13.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="viewCommission" layoutX="51.0" layoutY="97.0" prefHeight="200.0" prefWidth="618.0">
+                          <columns>
+                              <TableColumn fx:id="id_commission" prefWidth="35.0" text="ID" />
+                            <TableColumn fx:id="date" prefWidth="82.0" text="Дата" />
+                            <TableColumn fx:id="time" minWidth="0.0" prefWidth="86.0" text="Время" />
+                              <TableColumn fx:id="appraiser" prefWidth="108.0" text="Оценщик" />
+                              <TableColumn fx:id="object" minWidth="0.0" prefWidth="138.0" text="№ объекта" />
+                              <TableColumn fx:id="status" minWidth="0.0" prefWidth="209.0" text="Сатус" />
+                          </columns>
+                        </TableView>
+                        <ComboBox fx:id="searchStatus" layoutX="118.0" layoutY="47.0" prefWidth="150.0" promptText="Поиск по статусу" />
+                        <Button fx:id="MyCommissions" layoutX="404.0" layoutY="53.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" style="-fx-background-color: gold;" text="Мои заявки">
+                           <font>
+                              <Font name="Lobster" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ReturnAllCommissions" layoutX="550.0" layoutY="53.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="119.0" style="-fx-background-color: gold;" text="Все заявки">
+                           <font>
+                              <Font name="Lobster" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="MoreCommission" layoutX="596.0" layoutY="336.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="99.0" style="-fx-background-color: gold;" text="Подробнее">
+                           <font>
+                              <Font name="Lobster" size="14.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="PersonalCabinet" text="Личный кабинет">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="71.0" layoutY="39.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="68.0" layoutY="74.0" text="Пароль">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="68.0" layoutY="123.0" text="Фамилия">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="68.0" layoutY="158.0" text="Имя">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="194.0" text="Отчество">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="71.0" layoutY="229.0" text="Область">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="72.0" layoutY="258.0" text="Город">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="71.0" layoutY="289.0" text="Адрес">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="325.0" text="№ телефона">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="337.0" layoutY="49.0" text="E-mail">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="337.0" layoutY="94.0" text="Серия и № паспорта">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalSeries" layoutX="493.0" layoutY="94.0" prefHeight="20.0" prefWidth="23.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalLogin" layoutX="183.0" layoutY="39.0" prefHeight="20.0" prefWidth="85.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalPassword" layoutX="183.0" layoutY="74.0" prefHeight="20.0" prefWidth="97.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalSurname" layoutX="183.0" layoutY="123.0" prefHeight="20.0" prefWidth="104.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalName" layoutX="183.0" layoutY="158.0" prefHeight="20.0" prefWidth="110.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalPatronymic" layoutX="183.0" layoutY="194.0" prefHeight="20.0" prefWidth="117.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalState" layoutX="183.0" layoutY="229.0" prefHeight="20.0" prefWidth="130.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalCity" layoutX="183.0" layoutY="258.0" prefHeight="20.0" prefWidth="128.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalAddress" layoutX="183.0" layoutY="289.0" prefHeight="20.0" prefWidth="110.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalPhone" layoutX="183.0" layoutY="325.0" prefHeight="20.0" prefWidth="127.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalEmail" layoutX="480.0" layoutY="47.0" prefHeight="20.0" prefWidth="104.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PersonalNumber" layoutX="516.0" layoutY="94.0" prefHeight="20.0" prefWidth="125.0" text="Логин">
+                           <font>
+                              <Font name="Lobster" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="CorrectPersonal" layoutX="411.0" layoutY="222.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="209.0" style="-fx-background-color: gold;" text="Редактировать">
+                           <font>
+                              <Font name="Lobster" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="DeletePersonal" layoutX="411.0" layoutY="299.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="209.0" style="-fx-background-color: gold;" text="Удалить аккаунт">
+                           <font>
+                              <Font name="Lobster" size="17.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Label layoutX="228.0" layoutY="12.0" text="Меню пользователя">
+         <font>
+            <Font name="Lobster" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#dc8aff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
